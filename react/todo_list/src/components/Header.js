@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 function Header() {
     return (
@@ -9,7 +8,7 @@ function Header() {
 
                 </li>
                 <li>
-                    
+
                 </li>
             </ul>
         </nav>
