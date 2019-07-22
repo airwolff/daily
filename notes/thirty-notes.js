@@ -15,11 +15,31 @@ const inventors = [
   { first: 'Marie', last: 'Curie', year: 1867, passed: 1934 },
   { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
 ];
-
+const fifteen = inventors.filter(inventor => inventor.year >= 1500 && inventor.year <= 1599);
+console.table(fifteen); 
+// The same as below
 // filter iterates over each object in inventors array and runs callback function on it
+// filter can also take in as much as you need and return only what you want
 const fifteen = inventors.filter(function(inventor) {
   if(inventor.year >= 1500 && inventor.year <= 1599) {
     return true;
   }
 });
 console.table(fifteen);
+
+// map returns the same amount of what you give it
+// 
+
+// sort
+const age = inventors.sort(function(a, b) {
+  if(a.year > b.year) {
+    return 1;
+  } else {
+    return -1;
+  }
+})
+console.table(age);
+// rewritten as
+const age = inventors.sort((a, b) => a.year ? 1 : -1);
+  
+console.table(age);
