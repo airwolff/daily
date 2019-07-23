@@ -217,7 +217,7 @@ const sum = numbers.reduce(
   (accumulator, currentValue) => {
   return accumulator + currentValue; //
 } // all of this is the first argument, a callback function
- , 0) // 0 = second argument to reduce method which is the initial value for the accumulator, this is optional, removing it will set accumulator to first      // element in array
+ , 0) // 0 = second argument to reduce method which is the initial value for the accumulator, this is optional, removing it will set accumulator to first element in array
 
 
 // The scope of a variable is its visibility; where in the code is the function available? Here is a list of the different scopes a variable can have.

@@ -43,3 +43,6 @@ console.table(age);
 const age = inventors.sort((a, b) => a.year ? 1 : -1);
   
 console.table(age);
+
+// reduce
+
