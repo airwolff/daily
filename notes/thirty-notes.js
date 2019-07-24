@@ -44,5 +44,11 @@ const age = inventors.sort((a, b) => a.year ? 1 : -1);
   
 console.table(age);
 
-// reduce
+// https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
+const category = document.querySelector('.mw-category');
+const link = category.querySelectorAll('a');
+// querySelector can be called on any existing dom element as shown in category.querySelectorAll
+// above won't work because link returns a NodeList not array change to
+const links = Array.from(category.querySelectorAll('a'));
+const de = links.map(link => link.textContent);
