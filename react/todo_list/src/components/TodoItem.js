@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 function TodoItem() {
     return (
@@ -6,7 +6,7 @@ function TodoItem() {
             <input type="checkbox" />
             <p>Placeholder text here</p>
         </div>
-    )
+    );
 }
 
-export default TodoItem
+export default TodoItem;
