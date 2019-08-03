@@ -20,8 +20,8 @@ import React from "react"
 import ReactDOM from "react-dom"
 
 function App() {
-  const firstName = "Bob"
-  const lastName = "Ziroll"
+  const firstName = "First"
+  const lastName = "Last"
   
   return (
     <h1>Hello {`${firstName} ${lastName}`}!</h1>
@@ -33,3 +33,6 @@ ReactDOM.render(<App />, document.getElementById("root"))
 
 // inline style for jsx needs double curly because it's expecting an object and that object is in JS
 <h1 style={{color: "#FF8C00"}}>Good {timeOfDay}!</h1>
+
+
+// react props

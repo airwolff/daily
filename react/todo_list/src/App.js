@@ -7,18 +7,24 @@ class App extends React.Component {
         super()
         this.state = {
             todos: todosData
-        };
+        }
+        this.handleChange = this.handleChange.bind(this)
+    }
+    
+    handleChange(id) {
+        // Update state so that the item with the given id flips `completed` from false to true (or vise versa)
+        console.log("id", id)
     }
     
     render() {
-        const todoItems = this.state.todos.map(item => <TodoItem key={item.id} item={item}/>)
+        const todoItems = this.state.todos.map(item => <TodoItem key={item.id} item={item} handleChange={this.handleChange}/>)
         
         return (
             <div className="todo-list">
                 {todoItems}
             </div>
-        );    
-    };
+        )    
+    }
 }
 
 export default App
